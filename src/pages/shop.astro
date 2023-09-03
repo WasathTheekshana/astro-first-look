@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/default.astro';
+import ShopItems from '../components/shop-items.astro';
+---
+
+<Layout>
+	<div class="shop">
+		<h1>Shopt Sandwich Kits</h1>
+
+		<noscript>
+			<p>
+				JavaScript is require to puchase things from teh sandwch web store. to
+				order by phone, call <a href="tell:1234556">+94 76 669 2190</a>
+			</p>
+		</noscript>
+		<div class="products">
+            <ShopItems />
+			<p>TODO: show cart</p>
+		</div>
+	</div>
+</Layout>
+
+<style>
+	.shop {
+		padding: 3rem 5%;
+	}
+
+	.products {
+		align-items: flex-start;
+		display: grid;
+		gap: 2rem;
+		grid-template-columns: 1fr 260px;
+		position: relative;
+	}
+</style>
